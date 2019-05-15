@@ -1,0 +1,12 @@
+                Hangman Pseudo Code
+
+- a word is chosen from an array that is pre-populated
+- each letter of the word is put into an array as an individual value
+- webpage loads a line for each letter in the word
+- match the index value of the letter with the corresponding line
+- the user chooses a letter from loaded buttons already on the screen
+    - each button has a value for an individual letter 
+- when the user chooses a letter, search through the array and if the chosen letter matches a value in the array, populate the blank with corresponding index
+- if the chosen letter doesn't match a value in the array, subtract 1 from lives
+- if the user guesses all the correct letters display "You Win"
+- if the user doesnt guess all the correct letters, and the lives count falls to 0, display "You Lose"
