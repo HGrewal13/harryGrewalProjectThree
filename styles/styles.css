@@ -1,5 +1,5 @@
 body {
-    background: darkslategray;
+    background: rgb(69, 128, 128);
 }
 
 .wrapper {
@@ -33,6 +33,12 @@ body {
 
 button {
     width: 60px;
+}
+
+.disabledButton {
+    background-color: transparent;
+    color: transparent;
+    border: none;
 }
 
 .line {
