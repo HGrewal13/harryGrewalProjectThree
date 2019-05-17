@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 1px solid red;
+}
+
+html {
+    border: 10px solid #b5651d;
+    border-bottom: 25px solid #b5651d;
+    border-left-style: inset;
+    border-right-style: outset;
+}
+
+body {
+    /* background-image: url('../assets/chalkboardGreen.jpg');
+    background-size: contain; */
+    color: $chalkColor;
+}
+
+.game {
+    background-image: url('../assets/chalkboardGreen.jpg');
+    background-size: cover;
+    height: 80vh;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+.word {
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+}
+
+.letters {
+    width: 100px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    margin: 5px;
+    color: transparent;
+}
+
+.lettersGuessed {
+    color: white;
+}
+
+.options {
+    text-align: center;
+}
+
+button {
+    width: 60px;
+}
+
+.disabledButton {
+    background-color: transparent;
+    color: transparent;
+    border: none;
+}
+
+.line {
+    border-bottom: 1px solid white;
+}
+

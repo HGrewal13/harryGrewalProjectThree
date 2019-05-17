@@ -1,3 +1,4 @@
+const app = {};
 // Stores the words to be selected in an array
 const words = ["wow", "cool", "kewl", "round", "circle", "triangle"];
 // defines the number of tries the user has to get the word
@@ -57,7 +58,7 @@ answer.forEach(letter => {
         $('.lifeCount').empty();
         $('.lifeCount').append(`${lives}`);
         if (correctGuesses.length === answer.length) {
-            alert('you win!');
+            setTimeout("alert('You Win!')", 200);
             // INSERT PLAY AGAIN BUTTON
         } else if (lives === 0) {
             alert('You Lose');
@@ -71,3 +72,10 @@ $('.lifeCount').append(`${lives}`);
 // While loop so: while the length for correctGuesses < answer, the functions run. When the length is the same, pop up the winning screen 
 // array for correct guesses
 
+$(document).ready(function() {
+    
+});
+
+
+
+// toggleClass for animations

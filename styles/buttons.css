@@ -1,0 +1,7 @@
+button {
+  width: 60px; }
+
+.disabledButton {
+  background-color: transparent;
+  color: transparent;
+  border: none; }
