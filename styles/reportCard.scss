@@ -1,0 +1,40 @@
+.reportCardDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reportCard {
+    background-color: transparent;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.subject {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    position: relative;
+}
+
+.subject h3 {
+    width: 50%;
+}
+
+.grade {
+    visibility: hidden;
+    position: absolute;
+    left: 200px;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.category {
+    position: absolute;
+}

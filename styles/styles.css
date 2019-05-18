@@ -149,17 +149,27 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   font-family: 'Pangolin';
   font-size: 40px;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  padding: 10px 0 30px; }
+
+.reportCard {
+  font-family: 'Pangolin'; }
 
 .lettersGuessed {
   font-family: 'Pangolin';
   font-size: 28px;
   text-transform: uppercase; }
 
+.grade {
+  font-size: 30px; }
+
+.category h2 {
+  font-family: 'Pangolin';
+  text-transform: uppercase; }
+
 * {
   padding: 0;
-  margin: 0;
-  border: 1px solid red; }
+  margin: 0; }
 
 html {
   border: 10px solid #b5651d;
@@ -175,7 +185,8 @@ body {
 .game {
   background-image: url("../assets/chalkboardGreen.jpg");
   background-size: cover;
-  height: 80vh; }
+  height: 94.25vh;
+  position: relative; }
 
 .wrapper {
   width: 80%;
@@ -184,7 +195,6 @@ body {
 
 .word {
   width: 100%;
-  /* background-color: aquamarine; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,24 +214,81 @@ body {
   color: #fff; }
 
 .options {
-  text-align: center; }
+  text-align: center;
+  padding: 30px 0 50px; }
 
 .line {
   border-bottom: 1px solid #fff; }
 
-.livesHeading,
-.lifeCount {
-  display: inline-block; }
-
-.victim {
+.reportCardDiv {
   max-width: 100%;
   height: 200px;
   margin: 0 auto; }
 
 button {
-  width: 60px; }
+  width: 60px;
+  background: transparent;
+  color: white; }
 
 .disabledButton {
   background-color: transparent;
   color: transparent;
   border: none; }
+
+.reportCardDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.reportCard {
+  background-color: transparent;
+  width: 80%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.subject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50%;
+  position: relative; }
+
+.subject h3 {
+  width: 50%; }
+
+.grade {
+  visibility: hidden;
+  position: absolute;
+  left: 200px; }
+
+.visible {
+  visibility: visible; }
+
+.category {
+  position: absolute; }
+
+.lives {
+  position: absolute;
+  right: 15px;
+  bottom: -23px; }
+
+.livesHeading,
+.lifeCount {
+  display: inline-block; }
