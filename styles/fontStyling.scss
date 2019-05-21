@@ -1,30 +1,26 @@
+.title,
+.reportCard,
+.lettersGuessed,
+.category h2 {
+    font-family: 'Pangolin';
+}
+
+.title,
+.lettersGuessed,
+.category h2 {
+    text-transform: uppercase;
+}
 
 .title {
-    font-family: 'Pangolin';
     font-size: 35px;
-    text-transform: uppercase;
     text-align: center;
     padding: 10px 0 30px;
 }
 
-.reportCard {
-    font-family: 'Pangolin';
-}
-
 .lettersGuessed {
-    // font-family: 'Patrick Hand';
-    // font-family: 'Nanum Pen Script';
-    font-family: 'Pangolin';
-    // font-family: 'Nanum Brush Script';
     font-size: 28px;
-    text-transform: uppercase;
 }
 
 .grade {
     font-size: 30px;
-}
-
-.category h2 {
-    font-family: 'Pangolin';
-    text-transform: uppercase;
 }
