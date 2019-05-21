@@ -1,0 +1,57 @@
+@media (max-width: 900px) {
+    .grade {
+        left: 120px;
+    }
+}
+
+@media (max-width: 650px) {
+    .title {
+        font-size: 25px;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .game {
+        height: 94vh;
+    }
+
+    .javascript {
+        display: none;
+    }
+
+    .js {
+        display: block;
+    }
+
+    button {
+        width: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .grade {
+        left: 85px;
+    }
+
+    button {
+        width: 40px;
+    }
+}
+
+@media (max-width: 365px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 330px) {
+    button {
+        width: 37px;
+    }
+}

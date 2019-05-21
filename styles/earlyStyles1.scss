@@ -5,17 +5,18 @@
 }
 
 html {
+    // border: 10px solid $board;
+    // border-bottom: 25px solid $board;
+    // border-left-style: inset;
+    // border-right-style: outset;
+}
+
+body {
+    color: $chalkColor;
     border: 10px solid $board;
     border-bottom: 25px solid $board;
     border-left-style: inset;
     border-right-style: outset;
-}
-
-body {
-    /* background-image: url('../assets/chalkboardGreen.jpg');
-    background-size: contain; */
-    color: $chalkColor;
-    
 }
 
 .game {
@@ -28,7 +29,6 @@ body {
 .wrapper {
     width: 80%;
     margin: 0 auto;
-    /* background-color: red; */
 }
 
 .word {
@@ -52,7 +52,7 @@ body {
 
 .options {
     text-align: center;
-    padding: 30px 0 50px;
+    padding: 15px 0 30px;
 }
 
 .line {

@@ -59,14 +59,14 @@ app.init = function () {
                 app.subjectCount ++;
             } else {
                 // $('.a').addClass('visible');
-                $(`.grade${app.subjectCount}.a`).addClass('visible');
+                // $(`.grade${app.subjectCount}.a`).addClass('visible');
                 roundCounter = 0;
-                app.subjectCount ++;
+                // app.subjectCount ++;
             };
             
             console.log(`you have ${app.lives} left`);
-            $('.lifeCount').empty();
-            $('.lifeCount').append(`${app.lives}`);
+            // $('.lifeCount').empty();
+            // $('.lifeCount').append(`${app.lives}`);
             if (app.correctGuesses.length === answer.length) {
                 setTimeout("confirm('You Win! Play Again?')", 200);
                 // if (confirm('You Win!')(setTimeout("confirm('Play Again?')", 200))) {
@@ -85,7 +85,7 @@ app.init = function () {
         });
     // };
 
-    $('.lifeCount').append(`${app.lives}`);
+    // $('.lifeCount').append(`${app.lives}`);
 };
 
 // While loop so: while the length for correctGuesses < answer, the functions run. When the length is the same, pop up the winning screen 

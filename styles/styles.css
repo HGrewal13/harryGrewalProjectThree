@@ -147,7 +147,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .title {
   font-family: 'Pangolin';
-  font-size: 40px;
+  font-size: 35px;
   text-transform: uppercase;
   text-align: center;
   padding: 10px 0 30px; }
@@ -171,16 +171,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 0;
   margin: 0; }
 
-html {
+body {
+  color: #fff;
   border: 10px solid #b5651d;
   border-bottom: 25px solid #b5651d;
   border-left-style: inset;
   border-right-style: outset; }
-
-body {
-  /* background-image: url('../assets/chalkboardGreen.jpg');
-    background-size: contain; */
-  color: #fff; }
 
 .game {
   background-image: url("../assets/chalkboardGreen.jpg");
@@ -190,8 +186,7 @@ body {
 
 .wrapper {
   width: 80%;
-  margin: 0 auto;
-  /* background-color: red; */ }
+  margin: 0 auto; }
 
 .word {
   width: 100%;
@@ -215,7 +210,7 @@ body {
 
 .options {
   text-align: center;
-  padding: 30px 0 50px; }
+  padding: 15px 0 30px; }
 
 .line {
   border-bottom: 1px solid #fff; }
@@ -273,6 +268,9 @@ button {
 .subject h3 {
   width: 50%; }
 
+.js {
+  display: none; }
+
 .grade {
   visibility: hidden;
   position: absolute;
@@ -282,7 +280,8 @@ button {
   visibility: visible; }
 
 .category {
-  position: absolute; }
+  text-align: center;
+  padding-top: 15px; }
 
 .lives {
   position: absolute;
@@ -292,3 +291,37 @@ button {
 .livesHeading,
 .lifeCount {
   display: inline-block; }
+
+@media (max-width: 900px) {
+  .grade {
+    left: 120px; } }
+
+@media (max-width: 650px) {
+  .title {
+    font-size: 25px; }
+  .wrapper {
+    width: 90%; }
+  .game {
+    height: 94vh; }
+  .javascript {
+    display: none; }
+  .js {
+    display: block; }
+  button {
+    width: 50px; } }
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 20px; }
+  .grade {
+    left: 85px; }
+  button {
+    width: 40px; } }
+
+@media (max-width: 365px) {
+  .wrapper {
+    width: 100%; } }
+
+@media (max-width: 330px) {
+  button {
+    width: 37px; } }
